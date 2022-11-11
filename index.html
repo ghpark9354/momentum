@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>나만의 동기부여 홈화면 만들기</title>
+    <title>Momentum</title>
 
     <script src="index.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet');
 
         * {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Nanum Brush Script', cursive;
         }
 
         body {
@@ -30,26 +30,30 @@
         }
 
         .time {
-            font-size: 80px;
-            font-weight: bold;
+            font-size: 110px;
+            padding-top: 1.5em;
         }
 
         .greeting {
-            font-size: 50px;
+            font-size: 150px;
+            font-style: italic;
+            margin-top: -0.4em;
+            margin-bottom: -0.3em;
         }
 
         .todo {
-            font-size: 30px;
+            font-size: 60px;
+            font-style: italic;
         }
 
         .author {
-            font-size: 25px;
+            font-size: 50px;
             font-style: italic;
         }
 
         .main {
             width: 100vw;
-            height: 80vh;
+            height: 70vh;
 
             display: flex;
             flex-direction: column;
@@ -59,12 +63,14 @@
 
         .quote {
             width: 100vw;
-            height: 20vh;
+            height: 30vh;
+            font-size: 25px;
 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin: 1em;
         }
 
     </style>
@@ -75,9 +81,15 @@
 
 <body>
     <div class="main">
-        <div id="time" class="time">12:00</div>
-        <div class="greeting">Hello, GH</div>
-        <div class="todo">후회하지 말기</div>
+        <div id="time" class="time">00:00</div>
+        <div class="greeting">To Do List</div>
+        <div class="todo">
+            <p>
+                · 매일 한 번씩 꼭 웃기</br>
+                · 일주일에 3번 부모님께 연락하기</br>
+                · 행복한 미래 그리기, 그리고 지난날 후회하지 않기
+            </p>
+        </div>
     </div>
     <div class="quote">
         <div id="author" class="author">- 명언의 저자 -</div>
